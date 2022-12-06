@@ -7,6 +7,7 @@ import Counter from './components/Counter'
 import Welcome from './components/Welcome';
 import FunctionClick from './components/FunctionClick';
 import ClassClick from './Class/ClassClick';
+import EventBind from './Class/EventBind';
 
 class App extends Component {
   render()
@@ -22,6 +23,7 @@ class App extends Component {
         {/* <Counter/> */}
         {/* <FunctionClick /> */}
         {/* <ClassClick/> */}
+        <EventBind/>
       </div>
     );
   }
