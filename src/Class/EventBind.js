@@ -7,10 +7,17 @@ class EventBind extends Component{
         this.state = {
             message:'Hello'
         }
+        // approach #3
+        this.clickHandler = this.clickHandler.bind(this)
     }
 
-    clickHandler() {
-        this.setState({message:'Goodbye!'})
+    // clickHandler() {
+    //     this.setState({message:'Goodbye using #3!'})
+    //     console.log(this)
+    // }
+
+    clickHandler = () => {
+        this.setState({message:'Goodbye using #4!'})
         console.log(this)
     }
 
@@ -19,7 +26,9 @@ class EventBind extends Component{
             <div>
                 <div>{this.state.message}</div>
                 {/* <button onClick={this.clickHandler.bind(this)}>click Event Bind</button> */}
-                <button onClick={()=> this.clickHandler()}>click Event Bind</button>
+                {/* <button onClick={()=> this.clickHandler()}>click Event Bind better in passing parameter</button> */}
+                {/* if initialise this.clickHandler = this.clickHandler.bind(this) */}
+                <button onClick={this.clickHandler}>click Event Bind</button>
             </div>
         )
     }

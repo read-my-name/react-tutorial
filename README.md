@@ -19,4 +19,4 @@ state
 
 Notes:
 1. If 'this' keyword returns undefined means it didn't accessed anything
-2. If calling the function needs the parentheness and returns to () => function()
+2. If calling the function needs the parentheses and returns to () => function()
