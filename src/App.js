@@ -2,18 +2,26 @@ import React,{Component} from 'react';
 //import logo from './logo.svg';
 import './App.css';
 import { Greet } from './components/Greet'
-import Welcome from './components/Welcome'
-import Hello from './components/Hello'
+import Message from './components/Message';
+import Counter from './components/Counter'
+import Welcome from './components/Welcome';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './Class/ClassClick';
 
-class App extends Component 
-{
+class App extends Component {
   render()
   {
     return (
       <div className="App">
-        {/* <Greet/> */}
-        {/* <Welcome /> */}
-        <Hello/>
+        {/* <Greet name="Bruce" heroName="Lee">
+          <p>Children Props</p>
+        </Greet> */}
+        {/* <Message/> */}
+        {/* <Welcome name="Component" heroName="heroName/Welcome">
+        </Welcome> */}
+        {/* <Counter/> */}
+        {/* <FunctionClick /> */}
+        {/* <ClassClick/> */}
       </div>
     );
   }
